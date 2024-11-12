@@ -4,13 +4,16 @@ import LoginForm from './LoginForm';
 import SignUp from './SignUpForm';
 import './Login.css';
 import './App.css';
+import './Shop.css';
 import logo from './assets/download (2).png';
+import ShopComponent from './ShopComponent';
+import mainlogo from './assets/medicine app.png';
 
 const Header = () => {
     return (
         <header className="header">
             <div className="logo-container">
-                <img src="https://placeholder.pics/svg/50x50" alt="Logo" className="logo" />
+                <img src={mainlogo} alt="Logo" className="logo" />
                 <span className="app-name">MEDICINE DELIVERY APP</span>
             </div>
             <nav className="nav-links">
@@ -91,6 +94,7 @@ function App() {
         <Routes>
           <Route path="/login" element={<LoginForm />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/" element={<ShopComponent/>}/>
         </Routes>
       </div>
     </Router>

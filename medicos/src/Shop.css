@@ -1,0 +1,126 @@
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.shop-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.shop-container>.header {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.header-shop {
+    font-size: 36px;
+    font-weight: 700;
+    background-color: #f0f4ff;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 800px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+    font-size: 18px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.category-item >button{cursor: pointer;}
+
+.category-item {
+    width: 471px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+.category-item.tablets {
+    background-color: #de72ec;
+}
+
+.category-item.liquids {
+    background-color: #7bcdb7;
+}
+
+.items {
+    text-align: center;
+    height: 100vh;
+}
+.items-section{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.items-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    background-color: #f0f4ff;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.item-card {
+    display: inline-block;
+    width: 471px;
+    margin: 0 15px 30px 0;
+    background-color: #fafafa;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.item-info {
+    padding: 10px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.item-info h3 {
+    margin: 5px 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.item-info button {
+    background-color: #1c56e6;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
